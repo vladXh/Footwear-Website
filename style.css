@@ -19,6 +19,7 @@ body{
 }
 
 h1{
+    font-size: 86px;
     font-family: var(--font);
 }
 
@@ -73,6 +74,22 @@ div{
 
 .rotate90{
     transform: rotate(90deg);
+}
+
+.BoldText{
+    font-weight: bold;
+}
+
+.AlignTextRight{
+    text-align: right;
+}
+
+.GrayText{
+    color: gray;
+}
+
+.Hide{
+    display: none;
 }
 
 #navbar{
@@ -170,6 +187,7 @@ div{
     display: flex;
 }
 
+
 #HeroBarcode{
     height: auto;
     width: 12vw;
@@ -180,9 +198,11 @@ div{
 }
 
 #HeroP1{
-    width: 26vw;
+    width: auto;
+    max-width: 26vw;
     color: gray;
-    margin-bottom: 144px;
+    margin-bottom: 124px;
+    margin-right: 64px;
 }
 
 #HeroImage2{
@@ -231,4 +251,114 @@ div{
 
     background-color: var(--main-color);
     border-radius: 36px;
+}
+
+#AboutUs{
+    display: flex;
+}
+
+#ShopNowBtn{
+    color: white;
+    background-color: black;
+    font-weight: bold;
+
+    padding: 21px;
+    
+    padding-right: 32px;
+    padding-left: 32px;
+
+    border-radius: 100px;
+}
+
+#AboutSplitRight{
+    display: flex;
+    align-items: center;
+    margin-left: 48px;
+}
+
+#ShopNowBtn{
+    display: flex;
+    justify-content: center;
+    width: 128px;
+}
+
+#AboutP1{
+    max-width: 26vw;
+    color: gray;
+}
+
+#Expo{
+    width: 100vw;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    margin-top: 58px;
+    background-color: var(--secondary-color);
+}
+
+#ExpoMargins{
+    display: flex;
+
+    padding: 46px;
+    margin: 16vw;
+    margin-top: 24px;
+    margin-bottom: 24px;
+}
+
+#ExpoAcc1{
+    position: relative;
+    top: 82px;
+    left: 48px;
+}
+
+#ExpoSplitRight{
+    margin-left: 36px;
+}
+
+#ExpoP{
+    margin-top: 64px;
+    margin-bottom: 64px;
+    margin-right: 168px;
+}
+
+#ExpoP1{
+    margin-top: 84px;
+    margin-bottom: 64px;
+    margin-left: 188px;
+}
+
+#ProductHeader{
+    margin-top: 104px;
+}
+
+#ProductPage{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+
+    margin-top: 48px;
+}
+
+#ProductCategory{
+    color: gray;
+    font-size: 16px;
+}
+
+#ProductName{
+    font-size: 16px;
+}
+
+#ProductPrice{
+    margin: 6px;
+}
+
+#ProductCatPrice{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+#ProductImage{
+    width: 264px;
+    height: 264px;
+    margin-bottom: 24px;
+    border-radius: 32px;
 }
