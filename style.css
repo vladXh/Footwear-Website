@@ -36,6 +36,7 @@ li{
 a{
     text-decoration: none;
     color: black;
+    font-family: var(--font_secondary);
 }
 
 input::placeholder{
@@ -80,18 +81,35 @@ div{
     font-weight: bold;
 }
 
+.AlignTextLeft{
+    text-align: left;
+}
+
 .AlignTextRight{
     text-align: right;
+}
+
+.CenterText{
+    text-align: center;
 }
 
 .GrayText{
     color: gray;
 }
 
+.WhiteText{
+    color: white;
+}
+
 .Hide{
     display: none;
 }
 
+.CenterDiv{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 #navbar{
     display: flex;
     justify-content: space-evenly;
@@ -330,6 +348,11 @@ div{
     margin-top: 104px;
 }
 
+#Product{
+    display: flex;
+    justify-content: space-evenly;
+}
+
 #ProductPage{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -360,5 +383,64 @@ div{
     width: 264px;
     height: 264px;
     margin-bottom: 24px;
+    margin-right: 12px;
+    margin-left: 12px;
     border-radius: 32px;
+}
+
+#ProductsP1{
+    margin-top: 52px;
+    margin-bottom: 24px;
+}
+
+#ProductsViewMore{
+    display: flex;
+    justify-content: center;
+    background-color: black;
+    color: white;
+
+    width: auto;
+
+    padding: 16px;
+    padding-right: 24px;
+    padding-left: 24px;
+
+    margin-right: 28vw;
+    margin-left: 28vw;
+    border-radius: 100px;
+}
+
+#Footer{
+    width: 100vw;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    margin-top: 58px;
+    background-color: black;
+}
+
+#FooterMargins{
+    display: flex;
+    justify-content: center;
+
+    padding: 46px;
+    margin: 16vw;
+    margin-top: 24px;
+    margin-bottom: 24px;    
+}
+
+#FooterDiv1{
+    display: flex;
+    gap: 42vw;
+}
+
+#FooterH1{
+    text-align: center;
+    font-size: 64px;
+    margin: -16px;
+}
+
+#FooterDiv2{
+    display: flex;
+    gap: 42vw;
+    margin-top: 64px;
 }
