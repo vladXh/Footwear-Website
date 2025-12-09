@@ -53,7 +53,7 @@ const container = document.getElementById("ProductPage");
 
 products.forEach(p => {
     container.innerHTML += `
-        <div class="ProductOffer">
+        <div id="ProductOffer">
             <img id="productImage" src="${p.image}" alt="">
             <p class="margin0" id="ProductName">${p.name}</p>
             <div id="ProductCatPrice">

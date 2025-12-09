@@ -14,8 +14,8 @@
 
 body{
     margin: 18vw;
-    margin-top: 36px;
-    margin-bottom: 36px;
+    margin-top: 24px;
+    margin-bottom: 0;
 }
 
 h1{
@@ -133,8 +133,8 @@ div{
     gap: 24px;
     margin-right: 24px;
     margin-left: 24px;
-    padding-right: 24px;
-    padding-left: 24px;
+    padding-right: 48px;
+    padding-left: 48px;
     
     background-color: var(--main-color);
     border-radius: 100px;
@@ -153,8 +153,8 @@ div{
     font-family: var(--font_secondary);
     margin-left: 12px;
     margin-right: 12px;
-    padding-right: 24px;
-    padding-left: 12px;
+    padding-right: 36px;
+    padding-left: 24px;
     background-color: var(--main-color);
     border-radius: 100px;
 }
@@ -360,6 +360,11 @@ div{
     margin-top: 48px;
 }
 
+#ProductOffer{
+    margin-right: 24px;
+    margin-left: 24px;
+}
+
 #ProductCategory{
     color: gray;
     font-size: 16px;
@@ -383,8 +388,6 @@ div{
     width: 264px;
     height: 264px;
     margin-bottom: 24px;
-    margin-right: 12px;
-    margin-left: 12px;
     border-radius: 32px;
 }
 
@@ -414,7 +417,9 @@ div{
     width: 100vw;
     margin-left: 50%;
     transform: translateX(-50%);
-    margin-top: 58px;
+    margin-top: 72px;
+    padding-top: 1px;
+    padding-bottom: 1px;
     background-color: black;
 }
 
@@ -441,6 +446,16 @@ div{
 
 #FooterDiv2{
     display: flex;
-    gap: 42vw;
+    gap: 31vw;
     margin-top: 64px;
+}
+
+#FooterIconsContainer{
+    display: flex;
+    height: 64px;
+}
+
+.FooterIcon{
+    width: auto;
+    height: 100%;
 }
