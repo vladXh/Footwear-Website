@@ -12,6 +12,10 @@
     --secondary-color: #e9e9e9;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 body{
     margin: 18vw;
     margin-top: 24px;
@@ -25,7 +29,7 @@ h1{
 
 p{
     font-family: var(--font_secondary);
-    font-size: 21px;
+    font-size: 1.2vw;
 }
 
 li{
@@ -130,11 +134,11 @@ div{
 
     height: 100%;
 
-    gap: 24px;
+    gap: 2vw;
     margin-right: 24px;
     margin-left: 24px;
-    padding-right: 48px;
-    padding-left: 48px;
+    padding-right: 3vw;
+    padding-left: 3vw;
     
     background-color: var(--main-color);
     border-radius: 100px;
@@ -143,6 +147,7 @@ div{
 #navHeader{
     font-family:var(--font), sans-serif;
     margin: 0;
+    margin-left: 12px;
 }
 
 #SearchBar{
@@ -153,17 +158,22 @@ div{
     font-family: var(--font_secondary);
     margin-left: 12px;
     margin-right: 12px;
-    padding-right: 36px;
-    padding-left: 24px;
+    padding-right: 1vw;
+    padding-left: 0.5vw;
     background-color: var(--main-color);
     border-radius: 100px;
 }
 
 #searchInput{
     margin: 12px;
+    margin-right: 24px;
     border: 0;
     width: 92px;
-    font-size: 16px;
+    font-size: 18px;
+}
+
+#searchInput:focus{
+    outline: none;
 }
 
 #NavProfile{
@@ -173,6 +183,16 @@ div{
 #navIcons{
     width: 24px;
     height: auto;
+}
+
+#navMenu{
+    display: none;
+}
+
+#navMenuIcon{
+    width: 48px;
+    height: auto;
+    margin-right: 12px;
 }
 
 #navLink{
@@ -195,8 +215,12 @@ div{
     border-radius: 100%;
 }
 
+#NavRightSideButtons{
+    margin-right: 12px;
+}
+
 #HeroHeader{
-    font-size: 148px;
+    font-size: 8vw;
     text-align: center;
     margin: 48px;
 }
@@ -208,7 +232,7 @@ div{
 
 #HeroBarcode{
     height: auto;
-    width: 12vw;
+    width: 232px;
 
     margin-top: 12px;
 
@@ -219,7 +243,7 @@ div{
     width: auto;
     max-width: 26vw;
     color: gray;
-    margin-bottom: 124px;
+    margin-bottom: 6.5vw;
     margin-right: 64px;
 }
 
@@ -273,6 +297,10 @@ div{
 
 #AboutUs{
     display: flex;
+}
+
+#AboutUsHeader{
+    font-size: 6vw;
 }
 
 #ShopNowBtn{
@@ -332,20 +360,36 @@ div{
     margin-left: 36px;
 }
 
+#ExpoImg1{
+    width: auto;
+    height: 54vw;
+}
+
+#ExpoImg2{
+    width: auto;
+    height: 36vw;
+}
+
+#ExpoImg3{
+    width: auto;
+    height: 16vw;
+}
+
 #ExpoP{
     margin-top: 64px;
     margin-bottom: 64px;
-    margin-right: 168px;
+    margin-right: 7vw;
 }
 
 #ExpoP1{
     margin-top: 84px;
     margin-bottom: 64px;
-    margin-left: 188px;
+    margin-left: 8vw;
 }
 
 #ProductHeader{
     margin-top: 104px;
+    font-size: 5vw;
 }
 
 #Product{
@@ -408,8 +452,8 @@ div{
     padding-right: 24px;
     padding-left: 24px;
 
-    margin-right: 28vw;
-    margin-left: 28vw;
+    margin-right: 27vw;
+    margin-left: 27vw;
     border-radius: 100px;
 }
 
@@ -458,4 +502,19 @@ div{
 .FooterIcon{
     width: auto;
     height: 100%;
+}
+
+
+@media screen and (max-width: 1600px) {
+
+}
+
+@media screen and (max-width: 1600px) {
+    #NavRightSideButtons{
+        display: none;
+    }
+
+    #navMenu{
+        display: block;
+    }
 }
